@@ -1,7 +1,5 @@
-import random
-from random import randint, choice
-
 import pygame
+from random import randint, choice
 
 # Константы для размеров поля и сетки:
 SCREEN_WIDTH, SCREEN_HEIGHT = 640, 480
@@ -58,7 +56,7 @@ class GameObject:
     def draw(self):
         """Отрисовывает объекты на экране."""
         raise NotImplementedError(
-            f"Метод draw должен быть реализован в {self.__class__.__name__}"
+            f'Метод draw должен быть реализован в {self.__class__.__name__}'
         )
 
     def draw_rect(self, position, color, border_color=BORDER_COLOR):
